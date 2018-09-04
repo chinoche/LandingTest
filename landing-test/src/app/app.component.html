@@ -1,2 +1,7 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<app-header-css></app-header-css>
+<div class="component" fxLayout="column">
+  <app-header-css></app-header-css>
+  <div class="component-container" #scrollContainer>
+    <router-outlet (activate)="onActivate($event, scrollContainer)"></router-outlet>
+  </div>
+  <app-footer></app-footer>
+</div>

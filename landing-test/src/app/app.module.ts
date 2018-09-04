@@ -10,6 +10,7 @@ import { FeaturesPageComponent } from './features-page/features-page.component';
 import { PricingPageComponent } from './pricing-page/pricing-page.component';
 import { MoreInfoPageComponent } from './more-info-page/more-info-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import {AppRoutingModule} from "./modules/app-routing/app-routing.module";
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     ContactPageComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule
   ],
