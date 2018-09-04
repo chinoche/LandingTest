@@ -57,7 +57,10 @@ $headerHeight: 100px;
       width: 100%;
       text-align: center;
       margin: 0 auto;
-      &-menu {
+      transform: none;
+      top: 0;
+      left: 0;
+      & .menu {
         padding: 36px;
         margin: 57px 10px 53px 20px;
         background: #fff;
