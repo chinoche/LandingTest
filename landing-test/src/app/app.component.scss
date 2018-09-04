@@ -1,0 +1,12 @@
+$height__main-toolbar: 100px;
+.component {
+  height: 100%;
+  &-container {
+    margin-top: $height__main-toolbar;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100% - #{$height__main-toolbar});
+    position: relative;
+  }
+
+}
