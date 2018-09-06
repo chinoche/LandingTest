@@ -1,0 +1,21 @@
+<div class="pricing">
+  <div class="pricing-container">
+    <div *ngFor="let plan of pricingData.plans">
+      <article [class.pricing-best]="plan.bestDeal" class="pricing-best">
+        <h3 class="pricing-title">{{plan.title}}</h3>
+        <span >{{plan.productDescription}}</span>
+        <hr>
+        <span class="pricing-value">${{plan.price}}</span>
+        <blockquote>
+          <p class="pricing-description">{{plan.description}}</p>
+          <p class="pricing-description">{{plan.extendedDescription}}</p>
+        </blockquote>
+        <hr>
+        <ul *ngFor="let feature of plan.features">
+          <li [class.approved]="feature.active">{{feature.description}}</li>
+        </ul>
+        <button class="pricing-purchaseButton">Get Started</button>
+      </article>
+    </div>
+  </div>
+</div>

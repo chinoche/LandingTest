@@ -1,0 +1,70 @@
+<div class="landing">
+  <div class="landing-container">
+    <div class="landing-row" >
+      <div class="landing-content">
+        <div>
+          <div class="landing-item">
+            <h1 class="landing-item-title">The Best Way to Work Together</h1>
+            <p class="landing-item-description">We design and develop software for funded startups and established companies. Here are some oxamples of our work</p>
+          </div>
+          <app-intro [introData]="introData"></app-intro>
+        </div>
+      </div>
+    </div>
+    <div class="landing-row" >
+      <div class="content justify-content">
+        <div class="carousel">
+          <div class="carousel-container">
+            <div>
+              <slideshow
+                [minHeight]="'500px'"
+                [autoPlay]="true"
+                [showArrows]="true"
+                [imageUrls]="slides">
+              </slideshow>
+            </div>
+            <div>
+              <h2>Powerful Extensions</h2>
+              <span>This article is floated online with an aim to help you find  the best dvd solution. DVD printing is an important feature</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="landing-row" style="background-color: #F9F9F9">
+      <div class="content justify-content">
+        <div class="landing-absolute">
+          <div class="landing-item">
+            <h1 class="landing-item-title">Simply Pricing</h1>
+            <p class="landing-item-description">It seems from the moment you begin to take your love of astronomy seriously, the thing that is on your mind is what kind</p>
+          </div>
+          <app-pricing-element [pricingData]="pricingData"></app-pricing-element>
+        </div>
+      </div>
+    </div>
+    <div class="landing-row" style="background-color: #5E6977">
+      <div class="content justify-content">
+        <div class="landing-item-float">
+          <div class="landing-item landing-item-extra">
+            <h1 class="landing-item-title reverse">The Ultimate Pasta Length Editor</h1>
+            <p class="landing-item-description reverse">How to boost the design and developing process with a little help of our paws. True Story by Snoop Dogg.</p>
+          </div>
+          <div class="landing-brands">
+            <div class="landing-item">
+              <span class="landing-item-description reverse">Superpasta trusted and used by multiple companies</span>
+            </div>
+            <div class="landing-brands-container">
+              <img src="../../../assets/logos/adobe.svg">
+              <img src="../../../assets/logos/brazzers.svg">
+              <img src="../../../assets/logos/evernote.svg">
+              <img src="../../../assets/logos/marvel.svg">
+              <img src="../../../assets/logos/motorola.svg">
+              <img src="../../../assets/logos/netflix.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

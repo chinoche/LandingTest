@@ -1,0 +1,16 @@
+<div class="intro">
+  <div *ngIf="introData.heroUrl">
+    <img  [src]="introData.heroUrl" class="intro-image">
+  </div>
+  <div class="intro-container" >
+    <article class="intro-item" *ngFor="let feature of introData.introFeatures">
+      <div>
+        <img [src]="feature.feautureImagePath" width="56px">
+      </div>
+      <div>
+        <h3>{{ feature.title }}</h3>
+        <span>{{ feature.description }}</span>
+      </div>
+    </article>
+  </div>
+</div>
