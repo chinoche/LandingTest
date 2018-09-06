@@ -6,11 +6,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderCssComponent } from './components/header-css/header-css.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LandingPageComponent } from './custom-pages/landing-page/landing-page.component';
-import { FeaturesPageComponent } from './features-page/features-page.component';
-import { PricingPageComponent } from './pricing-page/pricing-page.component';
-import { MoreInfoPageComponent } from './more-info-page/more-info-page.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
+import { FeaturesPageComponent } from './custom-pages/features-page/features-page.component';
+import { PricingPageComponent } from './custom-pages/pricing-page/pricing-page.component';
+import { MoreInfoPageComponent } from './custom-pages/more-info-page/more-info-page.component';
+import { ContactPageComponent } from './custom-pages/contact-page/contact-page.component';
 import {AppRoutingModule} from "./modules/app-routing/app-routing.module";
+import { PricingElementComponent } from './components/pricing-element/pricing-element.component';
+import { IntroComponent } from './components/intro/intro.component';
+import {SlideshowModule} from "ng-simple-slideshow";
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import {AppRoutingModule} from "./modules/app-routing/app-routing.module";
     FeaturesPageComponent,
     PricingPageComponent,
     MoreInfoPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    PricingElementComponent,
+    IntroComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
